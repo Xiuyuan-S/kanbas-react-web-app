@@ -2,123 +2,169 @@
 <html>
 
 <head>
-    <style>
-        .button-container {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .button-container button {
-            display: inline-block;
-        }
-
-        .column {
-            float: left;
-        }
-
-        /* Set width length for the left, right and middle columns */
-        .part-1 {
-            width: 10%;
-        }
-
-        .part-2 {
-            width: 10%;
-        }
-
-        .part-3 {
-            width: 80%;
-        }
-
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .container {
-            display: inline-block;
-        }
-
-        .divider {
-            width: 100%;
-            border-bottom: 1px solid #000;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        input[type="text"] {
-            width: 100%;
-        }
-
-        .row span {
-            display: block;
-        }
-
-        .input-container {
-            display: inline-block;
-            text-align: center;
-            margin-right: 10px;
-        }
-
-        .arrow {
-            display: inline-block;
-            vertical-align: middle;
-            font-size: 24px;
-            margin: 0 10px;
-        }
-    </style>
-    <!-- icon script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
-        crossorigin="anonymous"></script>
+    <title>Table-Based Layout</title>
 </head>
 
 <body>
-    <div class="row">
-        <div class="column part-1">
-            <ul>
-                <li><a href="account.html">Account</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="course.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </div>
-        <div class="column part-2">
-            <ul>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="profile/index.html">Profile</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="settings.html">Settings</a></li>
-                <li><a href="#">ePortfolios</a></li>
-                <li><a href="#">Shared Content</a></li>
-                <li><a href="#">The Hub</a></li>
-                <li><a href="#">Qwickly Course Tools</a></li>
-                <li><a href="#">Global Announcements</a></li>
+    <table border="0" width="100%">
+        <tr>
+            <!-- First Column -->
+            <td width="10%" valign="top">
+                <ul>
+                    <li><a href="../home.html">Dashboard</a></li>
+                    <li><a href="../coursepage.html">Courses</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Studios</a></li>
+                    <li><a href="#">Commons</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </td>
+            
+            <!-- Second Column -->
+            <td width="30%" valign="top">
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="../assignments/index.html">Assignments</a></li>
+                    <li><a href="#">Quizes</a></li>
+                    <li><a href="../grades.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussion</a></li>
+                    <li><a href="#">Annoucements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="course details.html">Settings</a></li>
+                </ul>
+            </td>
 
-            </ul>
-        </div>
-        <div class="column part-3">
-        </div>
+            <!-- Third Column -->
+            <td width="100%" valign="top">
+            <a href="course details.html">
+                <button>Course Detail</button>
+            </a>
+            <button>Sections</button>
+            <button>Navigation</button>
+            <button>Apps</button>
+            <button>Featur Options</button>
+            <button>Integration</button>
 
-                <!-- Navigation Bar -->
-                <button>Courses Details</button>
-                <button>Sections</button>
-                <button>Navigation</button>
-                <button>Apps</button>
-                <button>Feature Options</button>
-                <button>Integration</button>
+            <h4>
+                Drag and Drop items to reorder them in the course naviagation
+            </h4>
+            <table border="1">
+                <tr>
+                    <td>Home</td>
+                </tr>
+                <tr>
+                    <td>Modules</td>
+                </tr>
+                <tr>
+                    <td>Piazza</td>
+                </tr>
+                <tr>
+                    <td>Zoom Meetings</td>
+                </tr>
+                <tr>
+                    <td>Assignments</td>
+                </tr>
+                <tr>
+                    <td>Quizes</td>
+                </tr>
+                <tr>
+                    <td>Grades</td>
+                </tr>
+                <tr>
+                    <td>People</td>
+                </tr>
+                <tr>
+                    <td>Panopto Video</td>
+                </tr>
+            </table>
+            <h4>
+                Drag items here to hide them from students.
+            </h4>
+            <p>
+                Disabling most pages will cause students who visits those pages to be redirected to teh course home page.
+            </p>
+            <table border="1">
+                <tr>
+                    <td>Chat</td>
+                </tr>
+                <tr>
+                    <td>SCORM
+                    </td>
+                </tr>
+                <tr>
+                    <td>Attendance
+                    </td>
+                </tr> 
+                <tr>
+                    <td>Barnes and Noble Bookstore
+                    </td>
+                </tr>
+                <tr>
+                    <td>Digication
+                    </td>
+                </tr>
+                <tr>
+                    <td>Top Hat
+                    </td>
+                </tr>
+                <tr>
+                    <td>Syllabus
+                    </td>
+                </tr>
+                <tr>
+                    <td>Perusall
+                    </td>
+                </tr>
+                <tr>
+                    <td>Microsoft Teams Meetings
+                    </td>
+                </tr>
+                <tr>
+                    <td>FACT Reporting and Photo Roster
+                    </td>
+                </tr>
+                <tr>
+                    <td>Progress Reports(Naviagation)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Microsoft Teams for Canvas
+                    </td>
+                </tr>
+                <tr>
+                    <td>VHL Central
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gradescope 1.3
+                    </td>
+                </tr>
+                <tr>
+                    <td>Credentials
+                    </td>
+                </tr>
+                <tr>
+                    <td>iClicker
+                    </td>
+                </tr>
+            </table>
+            <button>Save</button>
+        </td>
+
+        
 
 
-        </div>
-    </div>
-
+        </tr>
 </body>
-
-</html>
