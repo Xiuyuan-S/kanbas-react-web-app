@@ -61,7 +61,12 @@
             <h2>Course Details</h2>
             <table border="0">
                 <tr>
-                    <td>Image: </td>
+                    <td>Image: 
+                        <label>
+                            <input type="files">
+                            Choose Image
+                        </label>
+                    </td>
                 </tr>
                 <tr>
                     <td>Name: CS4550 12631 Web Development SEC 01 Fall 2023</td>
@@ -73,10 +78,18 @@
                     <td>Blueprint Course: No</td>
                 </tr>
                 <tr>
-                    <td>Course Template: enable course as a Course Template</td>
+                    <td>Course Template:
+                        <input type="checkbox" id="Enable" name="Enable">
+                        <label for="Enable">Enable course as a Course Template</label>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Time Zone: </td>
+                    <td>Time Zone:
+                        <select id="timezone" name="timezone">
+                            <option value="Eastern Time">Eastern Time(-5:00/ -4:00)</option>
+                            <option value="Pacific Time">Pacific Time(-5:00/ -4:00)</option> 
+                        </select>
+                    </td>
                 </tr>
                 <tr>
                     <td>SIS ID: CS4550.12631.202410</td>
@@ -85,10 +98,24 @@
                     <td>Subaccount: CS Undergraduate </td>
                 </tr>
                 <tr>
-                    <td>Term: 202410_1 Fall 2023 Semester Fal Term</td>
+                    <td>Term: 202410_1 Fall 2023 Semester Fall Term</td>
                 </tr>
                 <tr>
-                    <td>Participation: </td>
+                    <td>Participation: 
+                        <select id="Term" name="Term"> 
+                        <option value="Term">Term</option> 
+                        <option value="23 Fall">23 Fall</option>
+                        <option value="24 Spring">24 Spring</option>  
+                        Course Prticipation is limited to term start and end dates
+                        <td>
+                        <label for="TermStartDate">Start</label>
+                        <input type="date" id="courseDate" name="courseDate">
+                        </td>
+                        <td>
+                            <label for="TermEndDate">End</label>
+                            <input type="date" id="courseDate" name="courseDate">
+                        </td>
+                    </td>
                 </tr>
             </table>
 
@@ -97,37 +124,82 @@
             <td width="40%" valign="top">
             <table>
                 <tr>
-                    <td>Default due time: </td>
+                    <td>
+                        <input type="checkbox" id="Enable" name="Enable">
+                        <label for="Enable">Restrict students from viewing course before term start date</label>
+                        <br><input type="checkbox" id="Enable" name="Enable">
+                        <label for="Enable">Restrict students from viewing course after term start date</label>
+                        <br>Default due time:
+                        <select id="Term" name="Term"> 
+                        <option value="time">Account default(11:59pm)</option> 
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Language: 
+                    <select id="Term" name="Term"> 
+                    <option value="Not Set">Not Set(user-configurable, defaults to English(unit))</option> 
+                    
+                </td>
                 </tr>
                 <tr>
-                    <td>Language: </td>
+                    <td>File Storage: 10000 megrbytes</td>
                 </tr>
                 <tr>
-                    <td>File Storage: </td>
+                    <td>Large Course: 
+                        <input type="checkbox" id="Enable" name="Enable">
+                        <label for="Enable">Launch SpeedGrader Filtered by Student Group</label></td>
                 </tr>
                 <tr>
-                    <td>Large Course: </td>
+                    <td>Grading Scheme: 
+                        <input type="checkbox" id="Enable" name="Enable">
+                        <label for="Enable">Enable course grading scheme</label></td>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Grading Scheme: </td>
+                    <td>License: 
+                        <select id="Term" name="Term"> 
+                        <option value="Not Set">Private(Copyrighted)</option> 
+                    </td>
                 </tr>
                 <tr>
-                    <td>License: </td>
+                    <td>File Copyright: 
+                        <input type="checkbox" id="Enable" name="Enable">
+                        <label for="Enable">Copyright and license information must be provided for files before they are published</label></td>
+                    </td>
                 </tr>
                 <tr>
-                    <td>File Copyright: </td>
+                    <td>Visibility: If you need to make your course public please contact your administrator
+                        <select id="Term" name="Term"> 
+                        <option value="Not Set">Course</option>  
+                    <td><input type="checkbox" id="Enable" name="Enable">
+                        <label for="Enable">Include this course in the public course index</label></td>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Visibility: </td>
+                    <td>Format: 
+                        <select id="Term" name="Term"> 
+                        <option value="Not Set">On-Campus</option>  
+                    </td>
                 </tr>
                 <tr>
-                    <td>Format: </td>
+                    <td>Mastery Paths: 
+                        <input type="checkbox" id="Enable" name="Enable">
+                        <label for="Enable">Enable individual learning paths for students based on assessment</label></td>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Mastery Paths: </td>
+                    <td>Description: 
+                        <label for="courseDesc"></label>
+                        <input type="text" id="courseName" name="courseName">
+                    <a href="#">More Options</a>
+                    </td>
                 </tr>
+
                 <tr>
-                    <td>Description: </td>
+                <td>
+                    <button>Upodate Course Details</button>
+                </td>
                 </tr>
             
             </table>
