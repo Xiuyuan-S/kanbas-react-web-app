@@ -9,16 +9,13 @@
             left: 50%;
             transform: translateX(-50%);
         }
-
         .button-container button {
             display: inline-block;
         }
-
         .column {
             float: left;
         }
 
-        /* Set width length for the left, right and middle columns */
         .part-1 {
             width: 10%;
         }
@@ -44,7 +41,7 @@
 
         .divider {
             width: 100%;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid black;
             margin-top: 10px;
             margin-bottom: 10px;
         }
@@ -62,13 +59,9 @@
 </head>
 
 <body>
-    <!-- link to css file -->
     <link href="../sty/mainpage.css" rel="stylesheet" />
     
     <div>
-
-
-        <!-- <div class="row"> -->
         <div class="column part-1 custom-sidebar">
 
             <ul class="nav flex-column">
@@ -81,66 +74,62 @@
 
                 <li class="nav-item mb-2">
                     <a class="nav-link" href="../dashboard.html">
-                        <i class="fas fa-2x fa-tachometer-alt mb-1" style="color: #f50000;"></i>
+                        <i class="fas fa-2x fa-tachometer-alt mb-1" style="color: red;"></i>
                         Dashboard
                     </a>
                 </li>
                 <li class="nav-item mb-2">
                     <a class="nav-link" href="../courses/index.html">
-                        <i class="fas fa-2x fa-solid fa-book" style="color: #f50000;"></i>
+                        <i class="fas fa-2x fa-solid fa-book" style="color: red;"></i>
                         Course
                     </a>
                 </li>
                 <li class="nav-item mb-2">
                     <a class="nav-link" href="#">
-                        <i class="fas fa-2x fa-solid fa-calendar-days" style="color: #f50000;"></i>
+                        <i class="fas fa-2x fa-solid fa-calendar-days" style="color: red;"></i>
                         Calendar
                     </a>
                 </li>
                 <li class="nav-item mb-2">
                     <a class="nav-link" href="#">
-                        <i class="fas fa-2x fa-solid fa-inbox" style="color: #f50000;"></i>
+                        <i class="fas fa-2x fa-solid fa-inbox" style="color: red;"></i>
                         Inbox
                     </a>
                 </li>
                 <li class="nav-item mb-2">
                     <a class="nav-link" href="#">
-                        <i class="fas fa-2x fa-solid fa-clock-rotate-left" style="color: #f50000;"></i>
+                        <i class="fas fa-2x fa-solid fa-clock-rotate-left" style="color: red;"></i>
                         History
                     </a>
                 </li>
                 <li class="nav-item mb-2">
                     <a class="nav-link" href="#">
-                        <i class="fas fa-2x fa-solid fa-tv" style="color: #f50000;"></i>
+                        <i class="fas fa-2x fa-solid fa-tv" style="color: red;"></i>
                         Studio
                     </a>
                 </li>
                 <li class="nav-item mb-2">
                     <a class="nav-link" href="#">
-                        <i class="fas fa-2x fa-regular fa-comment" style="color: #f50000;"></i>
+                        <i class="fas fa-2x fa-regular fa-comment" style="color: red;"></i>
                         Commons
                     </a>
                 </li>
 
                 <li class="nav-item mb-2">
                     <a class="nav-link" href="#">
-                        <i class="fas fa-2x fa-solid fa-question" style="color: #f50000;"></i>
+                        <i class="fas fa-2x fa-solid fa-question" style="color: red;"></i>
                         <br>
                         Help
                     </a>
                 </li>
         </div>
 
-
-
         <div class="main-content p-4">
-            <!-- Title and Divider -->
             <div class="mb-4">
-                <label for="">Chongjie Wen's Profile</label>
+                <label for="">Nicole Song's Profile</label>
                 <div class="divider my-4"></div>
             </div>
 
-            <!-- Main Content -->
             <div class="row">
 
                 <div class="col-md-3">
@@ -148,7 +137,7 @@
                         <a href="#" class="account-link">Notifications</a>
                         <a href="index.html" class="account-link active">Profile</a>
                         <a href="#" class="account-link">Files</a>
-                        <a href="../settings.html" class="account-link">Settings</a>
+                        <a href="../settings/index.html" class="account-link">Settings</a>
                         <a href="#" class="account-link">ePortfolios</a>
                         <a href="#" class="account-link">Shared Content</a>
                         <a href="#" class="account-link">The Hub</a>
@@ -168,7 +157,6 @@
                         </a>
                     </div><br>
 
-                    <!-- profile icon -->
                     <div class="profile-section">
                         <div class="profile-icon">
                             <i class="fas fa-6x fa-user" aria-hidden="true"></i>
@@ -184,8 +172,8 @@
                             Contact
                         </h3>
                         <p>
-                            No registered services, you can add some on the <a href="../settings.html"
-                                style="color: #f50000;">settings</a> page.
+                            No registered services, you can add some on the <a href="../settings/index.html"
+                                style="color: red;">settings</a> page.
                         </p>
                     </div>
                     <br>
@@ -205,20 +193,13 @@
                         <i class="fa-solid fa-link" style="color: #39588e;"></i>
                         <a href="https://www.youtube.com/">Youtube</a>
                     </div>
-
                 </div>
-
-
             </div>
-
         </div>
-
     </div>
 
     <script>
-        // while click on text left black boarder shows up
         document.addEventListener('DOMContentLoaded', function () {
-            // This code runs when the page loads
             var selectedLink = localStorage.getItem('selectedLink');
             if (selectedLink) {
                 var linkElement = document.querySelector(`a[href="${selectedLink}"]`);
@@ -229,7 +210,6 @@
         });
 
         document.addEventListener('click', function (e) {
-            // This code runs when a link is clicked
             if (e.target.tagName === 'A') {
                 localStorage.setItem('selectedLink', e.target.getAttribute('href'));
             }

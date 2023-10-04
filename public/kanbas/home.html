@@ -3,26 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="sty/mainpage.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
 
-    
 </head>
 
-<body>
-    <!-- link to css file -->
-    <link href="sty/mainpage.css" rel="stylesheet" />
-
-
-    <!-- Load jQuery -->
+<body></body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Load Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
-
-    <!-- Kanbas Modal -->
     <div class="kanbasModal" id="kanbasModal">
         <div class="kanbasContent">
             <button id="kanbasCloseButton" class="btn btn-danger close-btn">
@@ -30,11 +21,11 @@
             </button>
             <div>
                 <div class="kanbasEmbedded">
-                    <h2><i class="fas fa-recycle" style="color: #f50000;"></i> CANVAS</h2>
+                    <h2><i class="fas fa-recycle" style="color: red;"></i> CANVAS</h2>
 
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2">
-                            <a class="nav-link active" href="profile/index.html">
+                            <a class="nav-link active" href="profiles/index.html">
                                 <i class="fas fa-2x fa-user-circle"></i>
                                 Account
                             </a>
@@ -42,50 +33,50 @@
 
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="dashboard.html">
-                                <i class="fas fa-2x fa-tachometer-alt mb-1" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-tachometer-alt mb-1" style="color: red;"></i>
                                 Dashboard
                             </a>
                         </li>
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="courses/index.html">
-                                <i class="fas fa-2x fa-solid fa-book" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-solid fa-book" style="color: red;"></i>
                                 Course
                             </a>
                         </li>
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-solid fa-calendar-days" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-solid fa-calendar-days" style="color: red;"></i>
                                 Calendar
                             </a>
                         </li>
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-solid fa-inbox" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-solid fa-inbox" style="color: red;"></i>
                                 Inbox
                             </a>
                         </li>
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-solid fa-clock-rotate-left" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-solid fa-clock-rotate-left" style="color: red;"></i>
                                 History
                             </a>
                         </li>
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-solid fa-tv" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-solid fa-tv" style="color: red;"></i>
                                 Studio
                             </a>
                         </li>
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-regular fa-comment" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-regular fa-comment" style="color: red;"></i>
                                 Commons
                             </a>
                         </li>
 
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-solid fa-question" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-solid fa-question" style="color: red;"></i>
                                 Help
                             </a>
                         </li>
@@ -94,7 +85,6 @@
         </div>
     </div>
 
-    <!-- Breadcrumb navigation bar for larger screens -->
     <div class="crumbbar container-fluid d-lg-block d-none">
         <nav class="breadcrumb-bar" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
             <ol class="breadcrumb">
@@ -104,7 +94,6 @@
         </nav>
     </div>
 
-    <!-- Black bar for md breakpoint or smaller -->
     <nav class="navbar navbar-expand-md bg-dark d-flex justify-content-between d-md-none">
         <button id="kanbasToggleButton" class="btn btn-dark d-md-none">
             <i class="fa-solid fa-bars"></i>
@@ -117,12 +106,9 @@
         </div>
     </nav>
 
-    <!-- Main content container -->
     <div class="container-fluid mt-3">
 
         <div class="row">
-
-            <!-- Kanbas Navigation Sidebar -->
             <div class="col-md-2 collapse d-lg-block" id="kanbasNav">
 
                 <div>
@@ -130,7 +116,7 @@
 
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a class="nav-link active" href="profile/index.html">
+                                <a class="nav-link active" href="profiles/index.html">
                                     <i class="fas fa-2x fa-user-circle"></i>
                                     Account
                                 </a>
@@ -138,51 +124,51 @@
 
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="dashboard.html">
-                                    <i class="fas fa-2x fa-tachometer-alt mb-1" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-tachometer-alt mb-1" style="color: red;"></i>
                                     Dashboard
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" style="background-color: white; color: red;"
                                     href="courses/index.html">
-                                    <i class="fas fa-2x fa-solid fa-book" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-book" style="color: red;"></i>
                                     Course
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-solid fa-calendar-days" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-calendar-days" style="color: red;"></i>
                                     Calendar
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-solid fa-inbox" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-inbox" style="color: red;"></i>
                                     Inbox
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-solid fa-clock-rotate-left" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-clock-rotate-left" style="color: red;"></i>
                                     History
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-solid fa-tv" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-tv" style="color: red;"></i>
                                     Studio
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-regular fa-comment" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-regular fa-comment" style="color: red;"></i>
                                     Commons
                                 </a>
                             </li>
 
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-solid fa-question" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-question" style="color: red;"></i>
                                     <br>
                                     Help
                                 </a>
@@ -191,24 +177,22 @@
                 </div>
             </div>
 
-            <!-- Course Navigation Sidebar -->
             <div class="col-md-2 collapse d-lg-block" id="courseNav">
                 <div>
                     <div class="account-sidebar">
-                        <a href="index.html" class="account-link active">Home</a>
+                        <a href="home.html" class="account-link active">Home</a>
                         <a href="#" class="account-link ">Modules</a>
                         <a href="#" class="account-link">Piazza</a>
                         <a href="#" class="account-link">Zoom Meetings</a>
                         <a href="assignments/index.html" class="account-link">Assignments</a>
                         <a href="#" class="account-link">Quizzes</a>
-                        <a href="#" class="account-link">Grades</a>
+                        <a href="grades.html" class="account-link">Grades</a>
                         <a href="#" class="account-link">People</a>
                         <a href="#" class="account-link">Panopto Video</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Course's Modules -->
             <div class="col-lg-6 col-12 p-3">
                 <div class="w-100">
                     <nav class="breadcrumb-bar" aria-label="buttons">
@@ -224,7 +208,7 @@
                                     <button class="btn btn-secondary dropdown-toggle mr-1" type="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa fa-check-circle" aria-hidden="true"
-                                            style="color: rgb(92, 202, 92);"></i>Publish All
+                                            style="color: green;"></i>Publish All
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -250,7 +234,6 @@
 
                 <div class="list-group mt-5 col-12">
                     <div class="list-group mt-3 col-12">
-                        <!-- Module Title -->
                         <a href="#" class="list-group-item list-group-item-action list-group-item-secondary"
                             data-bs-toggle="collapse" data-bs-target="#collapseGroup1" aria-expanded="false"
                             aria-controls="collapseGroup1">
@@ -259,7 +242,6 @@
                             <i class="fa-solid fa-caret-down ml-1 mr-1"></i>
                             Week 0 - INTRO
 
-                            <!-- icon -->
                             <span class="icon-right"><i class="fa-regular fa-circle-check" style="color: green;"></i>
                                 <i class="fa-solid fa-ellipsis-vertical"></i>
                         </a>
@@ -333,7 +315,6 @@
 
                 <div class="list-group mt-5 col-12">
                     <div class="list-group mt-3 col-12">
-                        <!-- Module Title -->
                         <a href="#" class="list-group-item list-group-item-action list-group-item-secondary"
                             data-bs-toggle="collapse" data-bs-target="#collapseGroup1" aria-expanded="false"
                             aria-controls="collapseGroup1">
@@ -341,8 +322,6 @@
                                 class="fa-solid fa-ellipsis-vertical"></i>
                             <i class="fa-solid fa-caret-down ml-1 mr-1"></i>
                             Week 1 - HTML
-
-                            <!-- icon -->
                             <span class="icon-right"><i class="fa-regular fa-circle-check" style="color: green;"></i>
                                 <i class="fa-solid fa-ellipsis-vertical"></i>
                         </a>
@@ -413,7 +392,6 @@
                 </div>
             </div>
 
-            <!-- Various Buttons and Links -->
             <div class="col-lg-2 d-none d-lg-block p-3">
                 <div class="course-status">
                     <h5>Course Status</h5>
@@ -473,12 +451,12 @@
         });
         document.getElementById('kanbasToggleButton').addEventListener('click', function () {
             var kanbasModal = document.getElementById('kanbasModal');
-            kanbasModal.style.display = 'flex'; // Show the modal
+            kanbasModal.style.display = 'flex'; 
         });
 
         document.getElementById('kanbasCloseButton').addEventListener('click', function () {
             var kanbasModal = document.getElementById('kanbasModal');
-            kanbasModal.style.display = 'none'; // Hide the modal
+            kanbasModal.style.display = 'none'; 
         });
 
     </script>

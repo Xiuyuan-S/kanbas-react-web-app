@@ -4,28 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="../sty/mainpage.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <title>Document</title>
 </head>
 
 <body>
-    <!-- link to css file -->
-    <link href="../sty/mainpage.css" rel="stylesheet" />
-
-   
-
-    <!-- Load jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Load Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
     
-
-
-    <!-- Kanbas Modal -->
     <div class="kanbasModal" id="kanbasModal">
         <div class="kanbasContent">
             <button id="kanbasCloseButton" class="btn btn-danger close-btn">
@@ -33,11 +22,10 @@
             </button>
             <div>
                 <div class="kanbasEmbedded">
-                    <h2><i class="fas fa-recycle" style="color: #f50000;"></i> CANVAS</h2>
-
+                    <h2><i class="fas fa-recycle" style="color: red;"></i> CANVAS</h2>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2">
-                            <a class="nav-link active" href="../profile/index.html">
+                            <a class="nav-link active" href="../profiles/index.html">
                                 <i class="fas fa-2x fa-user-circle"></i>
                                 Account
                             </a>
@@ -45,50 +33,50 @@
 
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="../dashboard.html">
-                                <i class="fas fa-2x fa-tachometer-alt mb-1" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-tachometer-alt mb-1" style="color: red;"></i>
                                 Dashboard
                             </a>
                         </li>
                         <li class="nav-item mb-2">
-                            <a class="nav-link" href="../course.html">
-                                <i class="fas fa-2x fa-solid fa-book" style="color: #f50000;"></i>
+                            <a class="nav-link" href="../home.html">
+                                <i class="fas fa-2x fa-solid fa-book" style="color: red;"></i>
                                 Course
                             </a>
                         </li>
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-solid fa-calendar-days" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-solid fa-calendar-days" style="color: red;"></i>
                                 Calendar
                             </a>
                         </li>
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-solid fa-inbox" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-solid fa-inbox" style="color: red;"></i>
                                 Inbox
                             </a>
                         </li>
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-solid fa-clock-rotate-left" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-solid fa-clock-rotate-left" style="color: red;"></i>
                                 History
                             </a>
                         </li>
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-solid fa-tv" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-solid fa-tv" style="color: red;"></i>
                                 Studio
                             </a>
                         </li>
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-regular fa-comment" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-regular fa-comment" style="color: red;"></i>
                                 Commons
                             </a>
                         </li>
 
                         <li class="nav-item mb-2">
                             <a class="nav-link" href="#">
-                                <i class="fas fa-2x fa-solid fa-question" style="color: #f50000;"></i>
+                                <i class="fas fa-2x fa-solid fa-question" style="color: red;"></i>
                                 Help
                             </a>
                         </li>
@@ -97,7 +85,6 @@
         </div>
     </div>
 
-    <!-- Breadcrumb navigation bar for larger screens -->
     <div class="crumbbar container-fluid d-lg-block d-none">
         <nav class="breadcrumb-bar" aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
             <ol class="breadcrumb">
@@ -107,7 +94,6 @@
         </nav>
     </div>
 
-    <!-- Black bar for md breakpoint or smaller -->
     <nav class="navbar navbar-expand-md bg-dark d-flex justify-content-between d-md-none">
         <button id="kanbasToggleButton" class="btn btn-dark d-md-none">
             <i class="fa-solid fa-bars"></i>
@@ -120,12 +106,9 @@
         </div>
     </nav>
 
-    <!-- Main content container -->
     <div class="container-fluid mt-3">
 
         <div class="row">
-
-            <!-- Kanbas Navigation Sidebar -->
             <div class="col-md-2 collapse d-lg-block" id="kanbasNav">
 
                 <div>
@@ -133,7 +116,7 @@
 
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2">
-                                <a class="nav-link active" href="../profile/index.html">
+                                <a class="nav-link active" href="../profiles/index.html">
                                     <i class="fas fa-2x fa-user-circle"></i>
                                     Account
                                 </a>
@@ -141,50 +124,50 @@
 
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="../dashboard.html">
-                                    <i class="fas fa-2x fa-tachometer-alt mb-1" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-tachometer-alt mb-1" style="color: red;"></i>
                                     Dashboard
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="../courses/index.html">
-                                    <i class="fas fa-2x fa-solid fa-book" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-book" style="color: red;"></i>
                                     Course
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-solid fa-calendar-days" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-calendar-days" style="color: red;"></i>
                                     Calendar
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-solid fa-inbox" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-inbox" style="color: red;"></i>
                                     Inbox
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-solid fa-clock-rotate-left" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-clock-rotate-left" style="color: red;"></i>
                                     History
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-solid fa-tv" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-tv" style="color: red;"></i>
                                     Studio
                                 </a>
                             </li>
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-regular fa-comment" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-regular fa-comment" style="color: red;"></i>
                                     Commons
                                 </a>
                             </li>
 
                             <li class="nav-item mb-2">
                                 <a class="nav-link" href="#">
-                                    <i class="fas fa-2x fa-solid fa-question" style="color: #f50000;"></i>
+                                    <i class="fas fa-2x fa-solid fa-question" style="color: red;"></i>
                                     <br>
                                     Help
                                 </a>
@@ -192,12 +175,10 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Course Navigation Sidebar -->
             <div class="col-md-2 collapse d-lg-block" id="courseNav">
                 <div>
                     <div class="account-sidebar">
-                        <a href="../courses/index.html" class="account-link">Home</a>
+                        <a href="../home.html" class="account-link">Home</a>
                         <a href="#" class="account-link ">Modules</a>
                         <a href="#" class="account-link">Piazza</a>
                         <a href="#" class="account-link">Zoom Meetings</a>
@@ -210,7 +191,6 @@
                 </div>
             </div>
 
-            <!-- Course's Modules -->
             <div class="col-lg-8 p-3 ml-3">
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -223,9 +203,9 @@
                             aria-selected="false">Settings</button>
 
 
-                        <button class="nav-link" id="nav-Navigation-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-Navigation" type="button" role="tab" aria-controls="nav-Navigation"
-                            aria-selected="false">Navigation</button>
+                            <a class="nav-link" id="nav-Navigation-tab" role="tab" aria-controls="nav-Navigation" 
+                            href="navigation.html" aria-selected="false">Navigation</a>
+
 
                         <button class="nav-link" id="nav-App-tab" data-bs-toggle="tab" data-bs-target="#nav-App"
                             type="button" role="tab" aria-controls="nav-App" aria-selected="false">App</button>
@@ -240,7 +220,6 @@
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
-                    <!-- Course Details page -->
                     <div class="tab-pane fade show active" id="nav-CourseDetails" role="tabpanel"
                         aria-labelledby="nav-CourseDetails-tab">
                         <div class="mt-3 mb-3">
@@ -248,7 +227,6 @@
                         </div>
 
                         <form>
-                            <!-- Name -->
                             <div class="form-group row">
                                 <label for="courseName" class="col-md-2 col-form-label">Name:</label>
                                 <div class="col-md-8">
@@ -257,7 +235,6 @@
                                 </div>
                             </div>
 
-                            <!-- Course Code -->
                             <div class="form-group row">
                                 <label for="courseCode" class="col-md-2 col-form-label">Course Code:</label>
                                 <div class="col-md-8">
@@ -266,7 +243,6 @@
                                 </div>
                             </div>
 
-                            <!-- Blueprint Course -->
                             <div class="form-group row">
                                 <label for="blueprintCourse" class="col-md-2 col-form-label">Blueprint Course:</label>
                                 <div class="col-md-8">
@@ -275,7 +251,6 @@
                                 </div>
                             </div>
 
-                            <!-- Course Template -->
                             <div class="form-group row">
                                 <label for="courseTemplate" class="col-md-2 col-form-label">Course Template:</label>
                                 <div class="col-md-8">
@@ -287,7 +262,6 @@
                                 </div>
                             </div>
 
-                            <!-- Time Zone -->
                             <div class="form-group row">
                                 <label for="timezone" class="col-md-2 col-form-label">Time Zone:</label>
                                 <div class="col-md-8">
@@ -301,7 +275,6 @@
                                 </div>
                             </div>
 
-                            <!-- SIS ID -->
                             <div class="form-group row">
                                 <label for="SIS ID" class="col-md-2 col-form-label">SIS ID:</label>
                                 <div class="col-md-8">
@@ -310,7 +283,6 @@
                                 </div>
                             </div>
 
-                            <!-- Subaccount -->
                             <div class="form-group row">
                                 <label for="Subaccount" class="col-md-2 col-form-label">Subaccount:</label>
                                 <div class="col-md-8">
@@ -319,7 +291,6 @@
                                 </div>
                             </div>
 
-                            <!-- Term -->
                             <div class="form-group row">
                                 <label for="Term" class="col-md-2 col-form-label">Term:</label>
                                 <div class="col-md-8">
@@ -328,7 +299,6 @@
                                 </div>
                             </div>
 
-                            <!-- Participation -->
                             <div class="form-group row">
                                 <label for="Participation" class="col-md-2 col-form-label">Participation:</label>
                                 <div class="col-md-8">
@@ -367,7 +337,6 @@
                                 </div>
                             </div>
 
-                            <!-- Default due time -->
                             <div class="form-group row">
                                 <label for="Default due time" class="col-md-2 col-form-label">Default due time:</label>
                                 <div class="col-md-8">
@@ -385,7 +354,6 @@
                                 </div>
                             </div>
 
-                            <!-- Language -->
                             <div class="form-group row">
                                 <label for="Language" class="col-md-2 col-form-label">Language:</label>
                                 <div class="col-md-8">
@@ -403,7 +371,6 @@
                                 </div>
                             </div>
 
-                            <!-- File Storage -->
                             <div class="form-group row">
                                 <label for="File Storage" class="col-md-2 col-form-label">File Storage:</label>
                                 <div class="col-md-8">
@@ -412,7 +379,6 @@
                                 </div>
                             </div>
 
-                            <!-- Large Course -->
                             <div class="form-group row">
                                 <label for="Large Course" class="col-md-2 col-form-label">Large Course:</label>
                                 <div class="col-md-8">
@@ -424,7 +390,6 @@
                                 </div>
                             </div>
 
-                            <!-- Grading Scheme -->
                             <div class="form-group row">
                                 <label for="Grading Scheme" class="col-md-2 col-form-label">Grading Scheme:</label>
                                 <div class="col-md-8">
@@ -436,7 +401,6 @@
                                 </div>
                             </div>
 
-                            <!-- License -->
                             <div class="form-group row">
                                 <label for="License" class="col-md-2 col-form-label">License:</label>
                                 <div class="col-md-8">
@@ -454,7 +418,6 @@
                                 </div>
                             </div>
 
-                            <!-- File Copyright -->
                             <div class="form-group row">
                                 <label for="File Copyright" class="col-md-2 col-form-label">File Copyright:</label>
                                 <div class="col-md-8">
@@ -468,7 +431,6 @@
                                 </div>
                             </div>
 
-                            <!-- Visibility -->
                             <div class="form-group row">
                                 <label for="Visibility" class="col-md-2 col-form-label">Visibility:</label>
                                 <div class="col-md-8">
@@ -496,7 +458,6 @@
                                 </div>
                             </div>
 
-                            <!-- Format -->
                             <div class="form-group row">
                                 <label for="Format" class="col-md-2 col-form-label">Format:</label>
                                 <div class="col-md-8">
@@ -507,7 +468,6 @@
                                 </div>
                             </div>
 
-                            <!-- Mastery Paths -->
                             <div class="form-group row">
                                 <label for="Mastery Paths" class="col-md-2 col-form-label">Mastery Paths:</label>
                                 <div class="col-md-8">
@@ -520,7 +480,6 @@
                                 </div>
                             </div>
 
-                            <!-- Description -->
                             <div class="form-group row">
                                 <label for="Description" class="col-md-2 col-form-label">Description:</label>
                                 <div class="col-md-8">
@@ -528,7 +487,6 @@
                                 </div>
                             </div>
 
-                            <!-- Update Button -->
                             <div class="form-group row">
                                 <div class="col-md-10">
                                     <div class="float-end">
@@ -548,7 +506,6 @@
                     <div class="tab-pane fade" id="nav-Navigation" role="tabpanel" aria-labelledby="nav-Navigation-tab">
 
                         <div class="mt-3 mb-3">Drag and drop items to reorder them in the course navigation.</div>
-                        <!-- Course navigation -->
                         <div>
                             <div class="list-group">
                                 <a href="#" class="list-group-item list-group-item-action">
@@ -826,19 +783,15 @@
         });
         document.getElementById('kanbasToggleButton').addEventListener('click', function () {
             var kanbasModal = document.getElementById('kanbasModal');
-            kanbasModal.style.display = 'flex'; // Show the modal
+            kanbasModal.style.display = 'flex'; 
         });
 
         document.getElementById('kanbasCloseButton').addEventListener('click', function () {
             var kanbasModal = document.getElementById('kanbasModal');
-            kanbasModal.style.display = 'none'; // Hide the modal
+            kanbasModal.style.display = 'none'; 
         });
 
     </script>
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
