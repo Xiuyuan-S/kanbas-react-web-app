@@ -34,7 +34,7 @@
   .logo {
     background-image:url(logo.png);
     display: block;
-    overflow: hidden;
+    overflow: visible;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
