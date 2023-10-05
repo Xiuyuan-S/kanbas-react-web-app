@@ -26,6 +26,22 @@
     margin-bottom: 5px;
 }
 
+.left #navbar .logo-container {
+    width: 100%;
+    background-color: #000000;
+    box-sizing: border-box;
+  }
+  .logo {
+    background-image:url(logo.png);
+    display: block;
+    overflow: hidden;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.3s;
+    height: 75px;
+  }
+
 .custom-sidebar .nav-link:hover {
     background-color: white;
     color: red;
