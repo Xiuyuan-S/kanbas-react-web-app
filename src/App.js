@@ -1,7 +1,13 @@
+import Labs from "./Labs";
+
 function App() {
   return (
-      <h1>Hello World!</h1>
-  );
+    <div>
+    <h1>Hello World!</h1>
+    <Labs/>
+ </div>
+);
+
 }
 export default App;
 
