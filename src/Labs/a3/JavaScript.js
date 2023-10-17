@@ -23,6 +23,7 @@ import Destructing from "./Destructing"
 import FunctionDestructing from "./FunctionDestructing"
 import Add from "./Add";
 import PathParameters from "./PathParameters";
+import TodoItem from "./todos/TodoItem";
 
 function JavaScript() {
     console.log('Hello World!');
@@ -54,6 +55,7 @@ function JavaScript() {
             <FunctionDestructing/>
             <Add/>
             <PathParameters/>
+            <TodoItem/>
        </div>
     );
  }
