@@ -16,6 +16,12 @@ import JsonStringify from "./JsonStringify"
 import FindFunction from "./FindFunction"
 import FindIndex from "./FindIndex"
 import FilterFunction from "./FilterFunction"
+import TemplateLiterals from "./TemplateLiterals"
+import House from "./House"
+import Spread from "./Spread"
+import Destructing from "./Destructing"
+import FunctionDestructing from "./FunctionDestructing"
+
 function JavaScript() {
     console.log('Hello World!');
     return(
@@ -39,6 +45,11 @@ function JavaScript() {
             <FindFunction/>
             <FindIndex/>
             <FilterFunction/>
+            <TemplateLiterals/>
+            <House/>
+            <Spread/>
+            <Destructing/>
+            <FunctionDestructing/>
        </div>
     );
  }
