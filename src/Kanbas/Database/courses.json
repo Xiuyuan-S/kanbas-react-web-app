@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "CS5001",
+    "name": "Math",
+    "number": "CS1111",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15"
+  },
+  {
+    "_id": "CS5002",
+    "name": "Python",
+    "number": "CS2222",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15"
+  },
+  {
+    "_id": "CS5004",
+    "name": "Java",
+    "number": "CS3333",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15"
+  }
+]

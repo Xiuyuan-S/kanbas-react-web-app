@@ -1,0 +1,11 @@
+[
+    { "_id": "A101", "title": "Assignment 1", "course": "CS5001" },
+    { "_id": "A102", "title": "Assignment 2", "course": "CS5001" },
+    { "_id": "A103", "title": "NAssignment 3", "course": "CS5001" },
+    { "_id": "A201", "title": "A1", "course": "CS5002" },
+    { "_id": "A202", "title": "A2", "course": "CS5002" },
+    { "_id": "A203", "title": "A3s", "course": "CS5002" },
+    { "_id": "A301", "title": "AA1", "course": "CS5004" },
+    { "_id": "A302", "title": "AA2", "course": "CS5004" },
+    { "_id": "A303", "title": "AA3", "course": "CS5004" }
+  ]

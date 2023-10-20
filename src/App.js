@@ -1,10 +1,12 @@
+import logo from "./logo.svg"
 import Kanbas from "./Kanbas";
 import Labs from "./Labs";
 import HelloWorld from "./Labs/a3/HelloWorld";
-import {HashRouter } from "react-router-dom";
-import {Routes, Route, Navigate} from "react-router";
+//import {HashRouter } from "react-router-dom";
+import {HashRouter, Link, Navigate, Route, Routes} from "react-router-dom";
 
 function App() {
+  const screen = "Labs";
   return (
     <HashRouter>
     <div>
