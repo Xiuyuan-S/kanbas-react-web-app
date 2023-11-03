@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-// import db from "../../Database";
-import { BiCheckCircle, BiDotsVerticalRounded } from "react-icons/bi";
+import db from "../../Database";
+import { Button, ListGroup, Form, InputGroup } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import {
   addModule,
@@ -10,143 +10,67 @@ import {
   setModule,
 } from "./modulesReducer";
 
-
 function ModuleList() {
   const { courseId } = useParams();
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
 
-  const [moduleVisibility, setModuleVisibility] = useState({});
-
-  const toggleModuleVisibility = (moduleId) => {
-    setModuleVisibility((prevVisibility) => ({
-      ...prevVisibility,
-      [moduleId]: !prevVisibility[moduleId],
-    }));
-  };
-
   return (
-    <div>
-      <ol class="breadcrumb">
-        <li>
-          <button type="button" class="btn btn-secondary mr-1" style={{ backgroundColor: 'rgb(237, 235, 235)', color: 'grey', marginLeft: '5px' }}>Collapse All</button>
-        </li>
-        <li>
-          <button type="button" class="btn btn-secondary mr-1" style={{ backgroundColor: 'rgb(237, 235, 235)', color: 'grey', marginLeft: '5px' }}>View Progress</button>
-        </li>
-        <li class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle mr-1" type="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ backgroundColor: 'rgb(237, 235, 235)', color: 'grey', marginLeft: '5px' }}>
-            <i aria-hidden="true"></i>Publish All
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li>
-          <button type="button" class="btn btn-danger mr-1" style={{ marginLeft: '5px' }}>
-            <i aria-hidden="true"></i>Module
-          </button>
-
-          <button type="button" class="btn btn-secondary mr-1" style={{ backgroundColor: 'rgb(237, 235, 235)', color: 'grey', marginLeft: '5px' }}>
-            <BiDotsVerticalRounded className="wd-icon" />
-          </button>
-        </li>
-      </ol><hr />
-
-
-
-      <ul className="list-group">
-        <li className="list-group-item" style={{ display: 'flex', alignItems: 'center' }}>
-
-          {}
-
-          <button
-            class="btn btn-secondary mr-1" style={{ marginRight: '10px', backgroundColor: 'rgb(237, 235, 235)', color: 'grey' }}
-            onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
-            Add
-          </button>
-          <button
-            class="btn btn-secondary mr-1" style={{ marginRight: '10px', backgroundColor: 'rgb(237, 235, 235)', color: 'grey' }}
-            onClick={() => dispatch(updateModule(module))}>
-            Update
-          </button>
-          <input
-            value={module.name}
-            onChange={(e) =>
-              dispatch(setModule({ ...module, name: e.target.value }))
-            } />
-          <textarea
-            style={{ marginLeft: '10px' }}
+    <div className="container mt-5">
+      <ListGroup>
+        <ListGroup.Item>
+          <InputGroup className="mb-3">
+            <Form.Control
+              value={module.name}
+              onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
+              placeholder="Module Name"
+            />
+            <Button variant="primary"  onClick={() => dispatch(setModule(module))}>
+              Add
+            </Button>
+            <Button variant="secondary" onClick={() => dispatch(updateModule(module))}>
+              Update
+            </Button>
+          </InputGroup>
+          <Form.Control
+            as="textarea"
             value={module.description}
-            onChange={(e) =>
-              dispatch(setModule({ ...module, description: e.target.value }))
-            } />
-
-        </li>
-
+            onChange={(e) =>  dispatch(setModule({ ...module, description: e.target.value }))}
+            placeholder="Module Description"
+          />
+        </ListGroup.Item>
 
         {modules
           .filter((module) => module.course === courseId)
           .map((module, index) => (
-            <li
-              key={index} className="list-group-item"
-              style={{
-                backgroundColor: '#f0f0f0',
-                marginBottom: '40px',
-              }}
-            >
-
-              <h3 onClick={() => toggleModuleVisibility(module._id)}
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                }}
-              >
-
-                <span>
-                  <BiDotsVerticalRounded className="wd-icon" />
-                  {module.name}
-                </span>
-                <span>
-                  <BiCheckCircle className="wd-icon" />
-                  <BiDotsVerticalRounded className="wd-icon" />
-                  <button
-                    class="btn btn-danger mr-1"
-                    onClick={() => dispatch(deleteModule(module._id))}>
-                    Delete
-                  </button>
-                  <button
-                    style={{ marginLeft: '5px' }}
-                    class="btn btn-danger mr-1"
-                    onClick={(event) => dispatch(setModule(module))}>
+            <ListGroup.Item key={index} action className="mb-2">
+              <div className="d-flex justify-content-between">
+                <div>{module.name}</div>
+                <div>
+                  <Button
+                    variant="warning"
+                    size="sm"
+                    className="me-2"
+                    onClick={() => setModule(module)}
+                  >
                     Edit
-                  </button>
-                </span>
-              </h3>
+                  </Button>
+                  <Button
+                    variant="danger"
+                    size="sm"
+                    onClick={() => deleteModule(module._id)}
+                  >
+                    Delete
+                  </Button>
+                </div>
+              </div>
               <p>{module.description}</p>
-              {
-                moduleVisibility[module._id] && module.lessons && (
-                  <ul className="list-group">
-                    {
-                      module.lessons.map((lesson, index) => (
-                        <li key={index} className="list-group-item">
-                          <h4>{lesson.name}</h4>
-                          <p>{lesson.description}</p>
-                        </li>
-                      ))
-                    }
-                  </ul>
-                )
-              }
-
-            </li>
-          ))
-        }
-      </ul>
+            </ListGroup.Item>
+          ))}
+      </ListGroup>
     </div>
   );
 }
+
 export default ModuleList;
