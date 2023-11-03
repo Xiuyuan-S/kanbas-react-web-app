@@ -23,48 +23,53 @@ function ModuleList() {
           <InputGroup className="mb-3">
             <Form.Control
               value={module.name}
-              onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
+              onChange={(e) =>
+                dispatch(setModule({ ...module, name: e.target.value }))
+              }
               placeholder="Module Name"
             />
-            <Button variant="primary"  onClick={() => dispatch(setModule(module))}>
+            <Button
+              variant="primary"
+              onClick={() =>
+                dispatch(addModule({ ...module, course: courseId }))
+              }
+            >
               Add
             </Button>
-            <Button variant="secondary" onClick={() => dispatch(updateModule(module))}>
+            <Button
+              variant="secondary"
+              onClick={() => dispatch(updateModule(module))}
+            >
               Update
             </Button>
           </InputGroup>
-          <Form.Control
-            as="textarea"
+          <textarea
             value={module.description}
-            onChange={(e) =>  dispatch(setModule({ ...module, description: e.target.value }))}
-            placeholder="Module Description"
+            onChange={(e) =>
+              dispatch(setModule({ ...module, description: e.target.value }))
+            }
           />
         </ListGroup.Item>
-
         {modules
           .filter((module) => module.course === courseId)
           .map((module, index) => (
-            <ListGroup.Item key={index} action className="mb-2">
-              <div className="d-flex justify-content-between">
-                <div>{module.name}</div>
-                <div>
-                  <Button
-                    variant="warning"
-                    size="sm"
-                    className="me-2"
-                    onClick={() => setModule(module)}
-                  >
-                    Edit
-                  </Button>
-                  <Button
-                    variant="danger"
-                    size="sm"
-                    onClick={() => deleteModule(module._id)}
-                  >
-                    Delete
-                  </Button>
-                </div>
-              </div>
+            <ListGroup.Item key={index} className="mb-2">
+              <Button
+                variant="warning"
+                size="sm"
+                className="me-2"
+                onClick={() => dispatch(setModule(module))}
+              >
+                Edit
+              </Button>
+              <Button
+                variant="danger"
+                size="sm"
+                onClick={() => dispatch(deleteModule(module._id))}
+              >
+                Delete
+              </Button>
+              <h3>{module.name}</h3>
               <p>{module.description}</p>
             </ListGroup.Item>
           ))}
