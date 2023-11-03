@@ -5,7 +5,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
     font-size: small;
-    background: linear-gradient(to bottom, grey 50%, white 50%);
+    background: linear-gradient(to bottom, pink 50%, white 50%);
 }
 
 
@@ -22,7 +22,7 @@
 
 .y-but-add {
     color:grey;
-    background-color: lightyellow;
+    background-color: pink;
     border-color: white;
 
     margin-right: 5px;

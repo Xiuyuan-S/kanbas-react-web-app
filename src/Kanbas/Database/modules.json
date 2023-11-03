@@ -1,36 +1,36 @@
 [
     {
       "_id": "M101",
-      "name": "Introduction to Rocket Propulsion",
-      "description": "Basic principles of rocket propulsion and rocket engines.",
+      "name": "Introduction to Math",
+      "description": "Basic principles of math.",
       "course": "CS5001",
       "lessons": [
         {
-          "name": "Introduction to Rocket Propulsion I",
+          "name": "Introduction to math I",
           "description": "Rocket propulsion is the science of accelerating matter to very high speeds using rockets. The matter, called propellant, is stored in a tank and ejected at high speed through a nozzle. The propellant is ejected at high speed in the opposite direction of the desired rocket motion, as described by Newton's third law of motion."
         },
         {
-          "name": "Introduction to Rocket Propulsion II",
+          "name": "Introduction to math II",
           "description": "Rocket propulsion is used in a wide variety of applications, including spaceflight, military missiles, and scientific research. The most common type of rocket propulsion system is the chemical rocket, which stores propellant in a tank and ejects it through a nozzle. Other types of rocket propulsion systems include electric propulsion, nuclear propulsion, and cold gas thrusters."
         },
         {
-          "name": "Introduction to Rocket Propulsion III",
+          "name": "Introduction to 11111 III",
           "description": "The most common type of rocket propulsion system is the chemical rocket, which stores propellant in a tank and ejects it through a nozzle. Other types of rocket propulsion systems include electric propulsion, nuclear propulsion, and cold gas thrusters."
         }       
       ]
     },
     {
       "_id": "M102",
-      "name": "Fuel and Combustion",
-      "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+      "name": "HAHAHAHA",
+      "description": "Understanding math.",
       "course": "CS5002",
       "lessons": [
         {
-          "name": "Fuel and Combustion I",
+          "name": "math I",
           "description": "Rocket fuel is a material that releases energy when it is burned. The most common type of rocket fuel is liquid hydrogen, which is burned with liquid oxygen to produce water vapor. Other types of rocket fuel include kerosene, methane, and solid propellants."
         },
         {
-          "name": "Fuel and Combustion II",
+          "name": "Fuel and 222 II",
           "description": "Rocket fuel is a material that releases energy when it is burned. The most common type of rocket fuel is liquid hydrogen, which is burned with liquid oxygen to produce water vapor. Other types of rocket fuel include kerosene, methane, and solid propellants."
         },
         {
@@ -41,8 +41,8 @@
     },
     {
       "_id": "M103",
-      "name": "Nozzle Design",
-      "description": "Principles of rocket nozzle design and performance optimization.",
+      "name": "Java",
+      "description": "Principles of Java nozzle design and performance optimization.",
       "course": "CS5004",
       "lessons": [
         {
