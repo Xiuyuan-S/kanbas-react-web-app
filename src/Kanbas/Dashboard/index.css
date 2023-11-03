@@ -1,52 +1,31 @@
-.card {
-    width: 290px;
-    height: 260px;
-    position: relative;
-    overflow: hidden; 
-}
-
-.card-spacing {
-    margin: 20px;
-}
-
-.main-content {
-    overflow-y: auto;
-    height: 100vh;
-    padding-top: 0;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.card-image {
-    background-color: #755d9a; /* Default color; can be replaced by an image */
-    height: 150px; /* 60% of 260px */
-    position: relative;
-}
-
-.card-body {
-    height: 104px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.card-title {
-    margin-bottom: 5px; /* Adjust as needed */
-}
-
-.card-text {
-    margin-bottom: 5px; /* Adjust as needed */
-}
-
-.card-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px; /* You can adjust this value to change the icon size */
-    z-index: 10; /* Ensure the icon stays on top of the image */
+.card-custom {
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: small;
+    background: linear-gradient(to bottom, lightyellow 50%, white 50%);
 }
 
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
+
+.y-but {
+    color:grey;
+    background-color: white;
+    border-color: white;
+
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+.y-but-add {
+    color:grey;
+    background-color: lightyellow;
+    border-color: white;
+
+    margin-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
