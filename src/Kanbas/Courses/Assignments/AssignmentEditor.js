@@ -8,7 +8,7 @@ import {
   deleteAssignment,
   updateAssignment,
   setAssignment,
-} from "./AssignmentsReducer.js";
+} from "./AssignmentsReducer";
 
 function AssignmentEditor() {
   const { assignmentId } = useParams();

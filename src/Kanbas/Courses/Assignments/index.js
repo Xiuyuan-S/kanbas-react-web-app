@@ -12,9 +12,6 @@ import {
 
 function Assignments() {
   const { courseId } = useParams();
-  /*
-  const assignments = db.assignments;
-  */
 
   const assignments = useSelector((state) => state.AssignmentsReducer.assignments);
   const assignment = useSelector((state) => state.AssignmentsReducer.assignment);
@@ -23,10 +20,8 @@ function Assignments() {
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId);
 
-
-  // Create a state to track the visibility of each module's content
   const [assignmentVisibility, setAssignmentVisibility] = useState({});
-  // Function to toggle the visibility of a module's content
+  
   const toggleAssignmentVisibility = (courseId) => {
     setAssignmentVisibility((prevVisibility) => ({
       ...prevVisibility,
