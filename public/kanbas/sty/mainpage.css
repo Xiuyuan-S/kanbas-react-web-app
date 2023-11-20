@@ -1,0 +1,292 @@
+.custom-sidebar {
+    background-color: black;
+    width: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.custom-sidebar .nav-link {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 12px;
+    align-items: center;
+    border-radius: 0;
+    width: 80px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-sidebar .nav-link i {
+    color: red;
+    margin-bottom: 5px;
+}
+
+.left #navbar .logo-container {
+    width: 100%;
+    background-color: #000000;
+    box-sizing: border-box;
+  }
+  .logo {
+    background-image:url(logo.png);
+    display: block;
+    overflow: visible;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 0.3s;
+    height: 75px;
+  }
+
+.custom-sidebar .nav-link:hover {
+    background-color: white;
+    color: red;
+}
+
+.custom-sidebar .nav-link.active {
+    background-color: black;
+    color: white;
+}
+
+.custom-sidebar .nav-link.active i {
+    color: white;
+}
+
+.nav-item .fa-user-circle {
+    color: white;
+}
+
+
+.main-content {
+    margin-left: 80px;
+    overflow-y: auto;
+    height: 100vh;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.custom-container {
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+.account-sidebar {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-link {
+    color: red;
+    text-decoration: none;
+    padding: 8px 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.account-link:hover {
+    text-decoration: underline;
+}
+
+.account-link.active {
+    color: black;
+    border-left: 3px solid black;
+    padding-left: 7px;
+}
+
+.account-link.selected {
+    border-left: 2px solid black;
+    padding-left: 5px;
+}
+
+a.selected {
+    border-left: 2px solid black;
+}
+
+.float-end a {
+    text-decoration: none;
+}
+
+.block {
+    width: 15rem;
+    height: 10rem;
+    margin: 2rem auto;
+    padding: 2;
+    background: lightblue;
+    display: block;
+}
+
+.card-spacing {
+    margin-right: 50px;
+}
+
+.sticky-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0;
+    background-color: white;
+    border-bottom: 1px solid #777777;
+}
+
+.breadcrumb-bar {
+    top: 0;
+    z-index: 1000;
+    padding: 0;
+    background-color: grey;
+    border-bottom: 1px solid #777777;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 260px;
+}
+
+
+#kanbasNav {
+    width: 80px;
+    flex: none;
+
+}
+
+#kanbasNav.show {
+    left: 0;
+}
+
+
+#courseNav {
+    /* reamin unchanged */
+    width: 150px;
+    flex: none;
+}
+
+.kanbasModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 2000;
+    display: none;
+}
+
+.kanbasContent {
+    /* remove shadow while not full screen*/
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: none;
+}
+
+.close-btn {
+    /* close button is at up most*/
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2001;
+}
+
+.kanbasEmbedded {
+    text-align: center;
+    background-color: white;
+    color: red;
+    width: 300px;
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+.kanbasEmbedded .nav-link {
+    color: red
+}
+
+.btn-primary {
+    background-color: black
+}
+
+
+.dropdown-icon-position {
+    position: absolute;
+    right: 10px;
+}
+
+.crumbbar {
+    position: relative;  
+    left: 85px;        
+    z-index: 10;         
+}
+
+
+
+/* styling for assignment */
+.with-border {
+    position: relative;
+    padding-left: 40px !important; 
+    border-left: 2px solid green !important;
+}
+.icon-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.content-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+.sub-text {
+    font-size: 0.8em;
+    color: grey;
+}
+.icon-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.oval-progress {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #D3D3D3;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.custom-checkbox-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px; 
+
+.nav-tabs .nav-link {
+    /* selected*/
+    color: red;  
+}
+
+.nav-tabs .nav-link.active {
+     /*selectedb */
+    color: black;
+}
+
+.nav-tabs .nav-link:hover {
+    /* hovered tab */
+    color: black; 
+}
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        .button-container {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .button-container button {
+            display: inline-block;
+        }
+
+        .column {
+            float: left;
+        }
+
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .container {
+            display: inline-block;
+        }
+
+        .divider {
+            width: 100%;
+            border-bottom: 1px solid #000;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+        }
+
+        .row span {
+            display: block;
+        }
+
+        .input-container {
+            display: inline-block;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        .arrow {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <link href="../sty/mainpage.css" rel="stylesheet" />
+        <div>
+            <div class="column part-1 custom-sidebar">
+
+                <ul class="nav flex-column">
+                    <li class="nav-item logo-container">
+                        <a
+                          class="nav-link logo"
+                          href="https://northeastern.instructure.com/"
+                        ></a>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link active" style="background-color: white; color: red;" href="index.html">
+                            <i class="fas fa-2x fa-user-circle"></i>
+                            Account
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="../dashboard.html">
+                            <i class="fas fa-2x fa-tachometer-alt mb-1" style="color: #f50000;"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="../courses/index.html">
+                            <i class="fas fa-2x fa-solid fa-book" style="color: #f50000;"></i>
+                            Course
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-2x fa-solid fa-calendar-days" style="color: #f50000;"></i>
+                            Calendar
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-2x fa-solid fa-inbox" style="color: #f50000;"></i>
+                            Inbox
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-2x fa-solid fa-clock-rotate-left" style="color: #f50000;"></i>
+                            History
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-2x fa-solid fa-tv" style="color: #f50000;"></i>
+                            Studio
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-2x fa-regular fa-comment" style="color: #f50000;"></i>
+                            Commons
+                        </a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-2x fa-solid fa-question" style="color: #f50000;"></i>
+                            <br>
+                            Help
+                        </a>
+                    </li>
+            </div>
+            <div class="main-content p-4">
+                <div class="mb-4">
+                    <label for="">Nicole Song's Profile</label>
+                    <div class="divider my-4"></div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="account-sidebar">
+                            <a href="#" class="account-link">Notifications</a>
+                            <a href="index.html" class="account-link active">Profile</a>
+                            <a href="#" class="account-link">Files</a>
+                            <a href="..//settings/index.html" class="account-link">Settings</a>
+                            <a href="#" class="account-link">ePortfolios</a>
+                            <a href="#" class="account-link">Shared Content</a>
+                            <a href="#" class="account-link">The Hub</a>
+                            <a href="#" class="account-link">Qwickly Course Tools</a>
+                            <a href="#" class="account-link">Global Announcements</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="col-md-9">
+                            <div class="profile-section">
+                                <div class="float-end">
+                                    <a href="index.html">
+
+                                        <button type="button" class="btn btn-secondary"
+                                            style="position: absolute; top: 100px; right: 500px;">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>Cancel Editing
+                                        </button>
+                                    </a>
+                                </div><br>
+                                <div class="profile-icon">
+                                    <i class="fas fa-6x fa-user" aria-hidden="true"></i>
+                                </div>
+                                <br>
+                                <h2>Nicole Song</h2>
+                                <div>
+                                    <input type="text" class="form-control" placeholder="Song"
+                                        aria-label="name" style="width: 300px;">
+                                </div>
+
+                                <br>
+                                <div>
+                                    <label for="pronouns">Pronouns:</label>
+                                </div>
+                                <div>
+                                    <select class="form-select" style="width: 200px;">
+                                        <option selected>None</option>
+                                        <option value="she">She/Her</option>
+                                        <option value="he">He/Him</option>
+                                        <option value="they">They/Them</option>
+                                        
+                                    </select>
+
+                                </div>
+                                <br>
+                                <div>
+
+                                    <label for="title">Title:</label>
+                                </div>
+                                <div>
+                                    <input type="text" class="form-control" style="width: 300px;">
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="contact">
+                                <h3>
+                                    Contact
+                                </h3>
+                                <p>
+                                    No registered services, you can add some on the<a href="../settings/index.html"
+                                        style="color: red;">settings</a> page.
+                                </p>
+                            </div>
+                            <br>
+
+                            <div class="bio">
+                                <h3>
+                                    Biography
+                                </h3>
+                                <p>
+                                <div style="margin:0; padding:0;">
+                                    <div style="margin:0; padding:0;">Faculty, Software Engineer, AI, Space, and
+                                        renewables
+                                        enthusiast.
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" id="textarea1" rows="3"
+                                            style="width: 300px;"></textarea>
+                                    </div>
+                                </div>
+                                </p>
+
+                            </div>
+
+                            <h3>
+                                Links
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/">Youtube</a> <i class="fa fa-external-link"></i>
+                                    Links to an
+                                    external
+                                    site.
+                                </li>
+                            </ul>
+                            <div>
+                                <div class="input-container col">
+                                    <div>Title</div>
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="Youtube"
+                                            style="width: 200px;">
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <div class="input-container col">
+                                    <div>URL</div>
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="https://www.youtube.com/"
+                                            style="width: 200px;">
+                                    </div>
+                                </div>
+                                <a href="#"><i class="fa-solid fa-xmark" style="color: red;"></i></a>
+                                <div>
+                                    <button type="button" class="btn btn-secondary">Add another link</button>
+                                </div>
+                                <br>
+                            </div>
+
+                            <div class="float-end">
+                                <a href="index.html">
+                                    <button type="button" class="btn btn-secondary">Cancel</button>
+                                </a>
+                                <a href="index.html" target="_blank">
+                                    <button type="button" class="btn btn-danger">Save Profile</button>
+                                </a>
+                            </div>
+                            <!-- <div><a href="index.html"><button>Edit Profile</button></a>
+                                <a href="index.html"><button>Cancel Editing</button></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var selectedLink = localStorage.getItem('selectedLink');
+        if (selectedLink) {
+            var linkElement = document.querySelector(`a[href="${selectedLink}"]`);
+            if (linkElement) {
+                linkElement.classList.add('selected');
+            }
+        }
+    });
+    document.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') {
+            localStorage.setItem('selectedLink', e.target.getAttribute('href'));
+        }
+    });
+</script>
+
+</html>
