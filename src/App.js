@@ -1,24 +1,33 @@
-import logo from "./logo.svg"
-import Kanbas from "./Kanbas";
+import logo from "./logo.svg";
 import Labs from "./Labs";
+import Kanbas from "./Kanbas";
 import HelloWorld from "./Labs/a3/HelloWorld";
-//import {HashRouter } from "react-router-dom";
-import {HashRouter, Link, Navigate, Route, Routes} from "react-router-dom";
+import { HashRouter, Link, Navigate, Route, Routes } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Project from "./project";
+
 
 function App() {
   const screen = "Labs";
   return (
+    
     <HashRouter>
-    <div>
-    <Routes>
-          <Route path="/"         element={<Navigate to="/Labs"/>}/>
-          <Route path="/hello"    element={<HelloWorld/>}/>
-          <Route path="/Labs/*"   element={<Labs/>}/>
-          <Route path="/Kanbas/*" element={<Kanbas/>}/>
+      <div>
+        
+        <Routes>
+          <Route path="/" element={<Navigate to="project" />} />
+          <Route path="/project/*" element={<Project />} />
+          <Route path="/Hello" element={<HelloWorld />} />
+          <Route path="/Labs/*" element={<Labs />} />
+          <Route path="/Kanbas/*" element={<Kanbas />} />
+          {/* <Route path="/Lectures" element={<StateManagement />} /> */}
         </Routes>
- </div>
- </HashRouter>
-);
+        {/* {screen === "Hello" && <HelloWorld />}
+        {screen === "Labs" && <Labs />}
+        {screen === "Kanbas" && <Kanbas />} */}
+      </div>
+    </HashRouter>
+  );
 }
-export default App;
 
+export default App;
