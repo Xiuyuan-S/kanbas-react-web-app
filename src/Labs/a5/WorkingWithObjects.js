@@ -11,7 +11,7 @@ function WorkingWithObjects() {
     score: 0,
   });
   // const URL = "http://localhost:4000/a5/assignment";
-  const URL = "http://localhost:4000/a5/assignment";
+  const URL = "https://kanbas-node-server-ap-ks3f.onrender.com/api/courses/a5/assignment";
   const fetchAssignment = async () => {
     const response = await axios.get(`${URL}`);
     setAssignment(response.data);
