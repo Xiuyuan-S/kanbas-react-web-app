@@ -6,14 +6,13 @@ import { BiTargetLock } from "react-icons/bi"
 import { BsGraphUp } from "react-icons/bs"
 import { PiSpeakerHighDuotone } from "react-icons/pi"
 import { BiSolidBellRing } from "react-icons/bi"
-import Buttons from '../Modules/buttons';
 import "./index.css"
 function Home() {
     return (
         <div className="row">
             <div className="col-lg-8 col-md-6 col-sm-12">
                 <h2>Home</h2>
-                <Buttons/>
+                
                 <ModuleList />
             </div>
             <div className="col-lg-4 col-md-6 d-none d-md-block">
