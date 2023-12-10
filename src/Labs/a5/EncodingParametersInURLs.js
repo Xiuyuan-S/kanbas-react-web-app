@@ -48,7 +48,7 @@ function EncodingParametersInURLs() {
                 }
             />
             <a
-                href={`hhttp://localhost:4000/a5/assignment/title/${assignment.title}`}
+                href={`https://kanbas-node-server-ap-a6.onrender.com/a5/assignment/title/${assignment.title}`}
                 className="btn btn-primary"
             >
                 Update Assignment Title
@@ -57,7 +57,7 @@ function EncodingParametersInURLs() {
             <h4>Assignment</h4>
 
             <a
-                href={`http://localhost:4000/a5/assignment/title`}
+                href={`https://kanbas-node-server-ap-a6.onrender.com/a5/assignment/title`}
                 className="btn btn-primary"
             >
                 Get Assignment Title
